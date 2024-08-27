@@ -243,7 +243,8 @@
         max-width: 350px;
     }
     .Worker{
-        min-height: 330px;
+        min-height: 350px;
+        padding-top: 70px;
     }
     .userImage{
         border-radius: 100%;

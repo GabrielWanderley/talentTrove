@@ -283,7 +283,10 @@ useEffect(()=>{
                         ):(<h3>Sem avaliação</h3>)}
                         <br />
                         <button>Ver analises</button>
-                        {/* icone de whats e email */}
+                        {userId?(<>
+                        <p>{user?.number}</p>
+                        <p>{user?.email}</p>
+                        </>):(<p>Se conecte para ver email e telefone</p>)}
                     </div>
                 </div>
             </div>
