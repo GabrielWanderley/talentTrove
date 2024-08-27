@@ -5,7 +5,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import { TextField } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { showUser } from '../Context';
-import { arrayRemove, arrayUnion, doc, getDoc, updateDoc } from 'firebase/firestore';
+import {arrayUnion, doc, getDoc, updateDoc } from 'firebase/firestore';
 import { db, storage } from '../firebase';
 import 'react-toastify/dist/ReactToastify.css';
 import { deleteObject, getDownloadURL, listAll, ref, uploadBytes } from 'firebase/storage';

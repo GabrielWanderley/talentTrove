@@ -10,12 +10,11 @@ import Image from "next/image";
 import foto from "../../Assets/Pfps.jpeg"
 import { db, storage } from "../firebase";
 import { useEffect, useState } from "react";
-import { arrayRemove, arrayUnion, collection, doc, getDoc, getDocFromCache, getDocs, updateDoc } from "firebase/firestore";
-import { Alert, Snackbar, TextField } from "@mui/material";
+import { arrayRemove, arrayUnion, doc, getDoc, updateDoc } from "firebase/firestore";
+import {TextField } from "@mui/material";
 import { showUser } from "../Context";
 import { toast } from "react-toastify";
 import { deleteObject, getDownloadURL, listAll, ref, uploadBytes } from 'firebase/storage';
-import { error } from 'console';
 
 
 

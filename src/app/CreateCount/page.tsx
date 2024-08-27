@@ -3,11 +3,10 @@
 import Image from "next/image"
 import styles from "../styles/CreateCont.module.css"
 import Fundo from "../../Assets/JEMA GER 1661-06.jpg"
-import { Alert, TextField } from "@mui/material"
+import { TextField } from "@mui/material"
 import { useState } from "react";
 
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import Snackbar from '@mui/material/Snackbar';
 
 import {auth, db} from "../firebase/index.js"
 import { addDoc, collection, updateDoc } from "firebase/firestore";

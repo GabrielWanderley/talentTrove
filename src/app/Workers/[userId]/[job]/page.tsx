@@ -9,7 +9,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import { useEffect, useState } from 'react';
 import { doc, getDoc, updateDoc } from 'firebase/firestore';
 import { db, storage } from '@/app/firebase';
-import { connectStorageEmulator, getDownloadURL, listAll, ref } from 'firebase/storage';
+import { getDownloadURL, listAll, ref } from 'firebase/storage';
 import { toast } from 'react-toastify';
 import { TextField } from '@mui/material';
 import Rating from '@mui/material/Rating';
@@ -17,7 +17,6 @@ import StarIcon from '@mui/icons-material/Star';
 import { showUser } from '@/app/Context';
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
-import { totalmem } from 'os';
 
 
 interface Props{
