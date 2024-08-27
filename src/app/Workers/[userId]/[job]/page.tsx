@@ -49,7 +49,7 @@ interface job {
     userId: string,
   }
   
-export default function works({params}:Props) {
+export default function Workers({params}:Props) {
 
     const {userId} = useUser()
 
