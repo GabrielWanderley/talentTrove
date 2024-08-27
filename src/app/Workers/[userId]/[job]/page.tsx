@@ -111,9 +111,16 @@ useEffect(() => {
    getUser()
 },[userId])
 
+            //para poder comparar as strings
+            const normalizeString = (str: string) => {
+                return str.trim().toLowerCase().normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, '')
+                .replace(/\s+/g, ''); 
+            };
+
 useEffect(() =>{
     const getJob = async () =>{
-       const trabalho = user?.jobs.filter(job => job.name === selectJob)
+       const trabalho = user?.jobs.filter(job => normalizeString(job.name) === normalizeString(selectJob))
        if(trabalho){
         const jobe = trabalho[0] as job;
          setJob(jobe)
@@ -234,7 +241,7 @@ useEffect(()=>{
            const updatedNotas = coments.notas.filter(notas => notas !== notaU)
 
            const updatedJobs = user?.jobs.map(job => {
-            if (job.name === selectJob) {
+            if (normalizeString(job.name) === normalizeString(selectJob)) {
                 return {
                     ...job,
                     notas: updatedNotas,
@@ -285,7 +292,7 @@ useEffect(()=>{
 
             <div className={styles.workers}>
                 {user?.jobs.map((job) =>{
-                const isSelect = job.name === selectJob;
+                const isSelect = normalizeString(job.name) === normalizeString(selectJob);
                 if(selectJob === ""){
                     setSelectJob(user?.jobs[0].name)
                 }
