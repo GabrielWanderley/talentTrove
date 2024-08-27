@@ -1,7 +1,6 @@
 'use client'
 import Image from 'next/image';
 import styles from '../../../styles/workers.module.css';
-import '../../../styles/workers.module.css';
 import userI from "../../../../Assets/Pfps.jpeg"
 import DeleteIcon from '@mui/icons-material/Delete';
 
@@ -14,7 +13,7 @@ import { toast } from 'react-toastify';
 import { TextField } from '@mui/material';
 import Rating from '@mui/material/Rating';
 import StarIcon from '@mui/icons-material/Star';
-import { showUser } from '@/app/Context';
+import { useUser } from '@/app/Context';
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
 
@@ -52,7 +51,7 @@ interface job {
   
 export default function works({params}:Props) {
 
-    const {userId} = showUser()
+    const {userId} = useUser()
 
 const [user, setUser] = useState<user | null>(null);
 const [userC, setUserC] = useState<user | null>(null);

@@ -12,7 +12,7 @@ import { db, storage } from "../firebase";
 import { useEffect, useState } from "react";
 import { arrayRemove, arrayUnion, doc, getDoc, updateDoc } from "firebase/firestore";
 import {TextField } from "@mui/material";
-import { showUser } from "../Context";
+import { useUser } from "../Context";
 import { toast } from "react-toastify";
 import { deleteObject, getDownloadURL, listAll, ref, uploadBytes } from 'firebase/storage';
 
@@ -36,7 +36,7 @@ export default function LocationPhoto(){
 
     //context 
 
-    const {userId}= showUser()
+    const {userId}= useUser()
     //atualizar 
     const [atualizar, setAtualizar]=useState(0);
     //cidades, usuario e imagem

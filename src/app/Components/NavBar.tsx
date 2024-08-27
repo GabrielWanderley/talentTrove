@@ -24,14 +24,14 @@ import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
 
 import { auth, db } from '../firebase';
 import { collection, getDocs, query, where } from 'firebase/firestore';
-import { showUser } from '../Context';
+import { useUser } from '../Context';
 import { toast } from 'react-toastify';
 
 import { Visibility, VisibilityOff } from '@mui/icons-material';
 
 export function NavBar(){
     //context
-    const {setUserId} = showUser();
+    const {setUserId} = useUser();
 
     //drop menu 
 

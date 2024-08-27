@@ -4,7 +4,7 @@ import styles from '../styles/UpdateDoc.module.css'
 import DeleteIcon from '@mui/icons-material/Delete';
 import { TextField } from '@mui/material';
 import { useEffect, useState } from 'react';
-import { showUser } from '../Context';
+import { useUser } from '../Context';
 import {arrayUnion, doc, getDoc, updateDoc } from 'firebase/firestore';
 import { db, storage } from '../firebase';
 import 'react-toastify/dist/ReactToastify.css';
@@ -33,7 +33,7 @@ interface user{
 
 export default function UpadateDoc(){
    //context
-    const {userId} = showUser()
+    const {userId} = useUser()
 
   //states
     const [user, setUser] = useState<user | null>(null);

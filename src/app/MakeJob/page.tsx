@@ -4,7 +4,7 @@ import  styles from '../styles/MakeJob.module.css'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { TextField } from '@mui/material'
-import { showUser } from '../Context'
+import { useUser } from '../Context'
 import { arrayUnion, doc, getDoc, updateDoc } from 'firebase/firestore'
 import { db, storage } from '../firebase'
 import { toast } from 'react-toastify'
@@ -40,7 +40,7 @@ interface user{
 
 export default function MakeJob(){
     //context
-    const {userId}= showUser()
+    const {userId}= useUser()
 
     //states
 

@@ -5,8 +5,6 @@ import { createContext, ReactNode, useContext, useState } from "react";
 interface UserContextInterface{
     userId : string;
     setUserId: React.Dispatch<React.SetStateAction<string>>;
-    userLogin: boolean;
-    setUserLogin: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const UserContext = createContext<UserContextInterface | undefined>(undefined)
@@ -17,18 +15,17 @@ interface userProviderInterface {
 
 export function UserProvider({children}: userProviderInterface){
     const [userId, setUserId] = useState<string>("");
-    const [userLogin, setUserLogin] = useState<boolean>(false);
     return(
-        <UserContext.Provider value={{userId, setUserId, userLogin, setUserLogin}}>
+        <UserContext.Provider value={{userId, setUserId}}>
             {children}
         </UserContext.Provider>
     )
 }
 
-export function showUser():UserContextInterface{
+export function useUser():UserContextInterface{
     const context = useContext(UserContext);
     if(!context){
-        throw new Error('showUser deve ser usado dentro de um userProvider') 
+        throw new Error('useUser deve ser usado dentro de um userProvider') 
     }
     return context;
 }
