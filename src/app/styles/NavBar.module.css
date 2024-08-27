@@ -1,0 +1,97 @@
+.navbar{
+    background-image: url('../../Assets/Rectangle\ 10.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+     text-align: center;
+    padding: 0px;
+    margin-top: 0px;
+    padding-top: 1px;
+    color: white;
+}
+
+.navbarContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Icon{
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.Icon2{
+    width: 45px;
+    height: 45px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.Modal{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 400px;
+    height: 300px;
+    background-color: #3D3B3B;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Modalbutton{
+
+    margin-top: 10px;
+    background-color: #F2BD49;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow:
+    4px 4px rgba(0, 0, 0, 0.801);
+    cursor: pointer;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    color: black; 
+    margin-left: 10px;
+  
+  }
+  
+  .Modalbutton:active{
+  
+    box-shadow: 0 2px rgba(0, 0, 0, 0.801);
+    transform: translateY(4px);
+  }
+
+.passwordShow{
+    position: absolute;
+    margin-top: 15px;
+    background-color: #F2BD49;
+    box-shadow:
+    4px 4px rgba(0, 0, 0, 0.801);
+    border-radius: 4px;
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.passwordShow:active{
+  
+    box-shadow: 0 2px rgba(0, 0, 0, 0.801);
+    transform: translateY(4px);
+  }
+
+@media (max-width:768px) {
+    .navbar{
+        background-image: url('../../Assets/RectangleFone.png');
+    }
+    .Modal{
+        width: 300px;
+    }
+    
+}

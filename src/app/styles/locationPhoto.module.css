@@ -1,0 +1,163 @@
+.locationPhoto{
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.locateDiv{
+
+    margin: 0 auto;
+    max-width: 900px;
+    background-color: #F2BD49;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.479);
+    padding-bottom: 20px;
+
+}
+
+.selectCityDiv{
+    padding-top: 20px;
+    text-align: center;
+    max-width:320px;
+    margin: 0 auto;
+}
+
+.button1{
+
+    margin-top: 10px;
+    background-color: #3D3B3B;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow:
+    4px 4px rgba(0, 0, 0, 0.801);
+    cursor: pointer;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    color: white; 
+    margin-left: 10px;
+  }
+  
+  .button1:active{
+  
+    box-shadow: 0 2px rgba(0, 0, 0, 0.801);
+    transform: translateY(4px);
+  }
+
+.locateCityDiv{
+    
+    margin: 0 auto;
+    text-align: center;
+    max-width: 390px;
+    display: grid;
+    grid-template-columns: repeat(3, 0.1fr);
+    gap:10px;
+    margin-top: 30px;
+}
+
+.city{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    display: flex;
+    background-color: #3D3B3B;
+    padding: 3px;
+    padding-right: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.479);
+
+}
+
+.photoDiv{
+    margin: 0 auto;
+    max-width: 500px;
+    margin-top: 40px;
+    background-color: #3D3B3B;
+    color: white;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.479);
+}
+
+.photo{
+    width: 260px;
+    height: 315px;
+}
+
+.photoDiv input[type=file]::file-selector-button {
+    margin-top: 10px;
+    margin-right: 20px;
+    border: none;
+    background: #F2BD49;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+  }
+  
+  .photoDiv  input[type=file]::file-selector-button:hover {
+    background: #ffd988;
+  }
+
+
+.photoDiv button{
+
+    margin-top: 10px;
+    background-color: #F2BD49;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow:
+    4px 4px rgba(0, 0, 0, 0.801);
+    cursor: pointer;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    color: black; 
+    margin-left: 10px;
+  
+  }
+  
+  .photoDiv button:active{
+  
+    box-shadow: 0 2px rgba(0, 0, 0, 0.801);
+    transform: translateY(4px);
+  }
+
+
+@media (max-width:768px) {
+
+    .locationPhoto{
+        margin: 0 auto;
+        max-width: 350px;
+    }
+
+    .selectCityDiv{
+        padding-top: 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: block;
+        margin-left: 23px;
+    }
+    
+    .button1{
+
+        margin-right: 25px;
+      }
+      .locateCityDiv{
+    
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        max-width: 445px;
+        display: grid;
+        grid-template-columns: repeat(2, 0.1fr);
+        gap:10px;
+        margin-top: 30px;
+    }
+    
+   
+}

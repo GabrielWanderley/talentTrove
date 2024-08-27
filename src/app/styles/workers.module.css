@@ -1,0 +1,306 @@
+.containerWorks{
+    margin: 0 auto;
+    max-width: 1100px;
+    align-items: center;
+    margin-top: 100px;
+    font-family: "Montserrat Alternates", sans-serif;
+    
+}
+
+.Worker{
+    margin: 0 auto;
+    min-height: 300px;
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.479);
+    text-align: center;
+    background-color: #D6D3C6;
+}
+
+.Worker button{
+
+    background-color: #F2BD49;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow:
+    4px 4px rgba(0, 0, 0, 0.801);
+    cursor: pointer;
+    transition: box-shadow 0.2s ease, transform 0.2s ease; 
+  
+  }
+  
+  .Worker button:active{
+  
+    box-shadow: 0 2px rgba(0, 0, 0, 0.801);
+    transform: translateY(4px);
+  }
+
+.workerContent{
+    height: 300px;
+    max-width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.userImage{
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+}
+
+.userText{
+       margin-left: 20px;
+}
+
+.userText h1{
+    font-weight: 600;
+}
+
+.workers{
+    margin: 0 auto;
+    max-width: 900px ;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, 0.4fr);
+    gap: 0px;
+    margin-top: 30px;
+
+}
+
+.workers h3{
+   background-color: #F2BD49;
+   padding: 10px;
+   margin-left: 10px;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: box-shadow 0.2s ease, transform 0.2s ease; 
+
+}
+
+.workers h3:first-child{
+    box-shadow: 0 2px rgba(0, 0, 0, 0.801);
+
+}
+.workContent{
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+}
+.work{
+    margin-top: 100px;
+    text-align: center;
+    background-color: #95CBC8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.479);
+    word-break: break-all;
+
+}
+.work p{
+    text-align: left;
+}
+
+.work h1{
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.image1{
+    width: 600px;
+    height: 300px;
+}
+
+.video{
+    width: 600px;
+    height: 300px;
+}
+
+.comentDiv{
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+    
+    background-color: #3D3B3B;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.479);
+    color: white;
+}
+
+.comentDiv button{
+
+    margin-top: 10px;
+    background-color: #F2BD49;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow:
+    4px 4px rgba(0, 0, 0, 0.801);
+    cursor: pointer;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    color: black; 
+  
+  }
+  
+  .comentDiv button:active{
+  
+    box-shadow: 0 2px rgba(0, 0, 0, 0.801);
+    transform: translateY(4px);
+  }
+
+.comentDiv textarea{
+    max-width: 290px;
+    min-width: 290px;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+  .inputJob{
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+}
+
+.comentWork{
+    margin-top: 50px;
+}
+
+.comentContainer{
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coment{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #E89096;
+    min-height: 100px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.479);
+    padding: 10px;
+    justify-content: center;
+    flex-direction:column;
+    gap: 20px;
+    width: 700px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.comentContent{
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: center;
+    justify-content: center;
+    word-break: break-all;
+}
+
+.comentContent p {
+    text-align: left;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.userImageClient{
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+.comentImgName{
+    display: flex;
+}
+
+.comentText{
+    max-width: 600px;
+    height: 300px;
+    word-break: break-all;
+}
+.deleteIcon{
+    position: absolute;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.deleteIcon:active{
+    transform: translateY(4px);
+}
+
+
+@media (max-width:768px) {
+
+    .containerWorks{
+        max-width: 350px;
+    }
+    .Worker{
+        min-height: 330px;
+    }
+    .userImage{
+        border-radius: 100%;
+        height: 150px;
+        width: 150px;
+    }
+    .workers{
+        max-width: 350px;
+        text-align: center;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 0.1fr);
+        gap: 1px;
+    }
+
+    .workers h3{
+        background-color: #F2BD49;
+        padding: 10px;
+        margin-left: 5px;
+        border-radius: 4px;
+        box-shadow:
+        4px 4px rgba(0, 0, 0, 0.801);
+        cursor: pointer;
+     }
+
+     .image1{
+        width: 315px;
+        height: 300px;
+    }
+    
+    .video{
+        width: 315px;
+        height: 300px;
+    }
+    .comentContainer{
+        margin: 0 auto;
+        max-width: 345px;
+    }
+    
+    .coment{
+        display:block;
+        text-align: center;
+        width: 335px;
+    }
+
+    .userImageClient{
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        margin-top: 10px;
+        margin-right: 5px;
+    }
+    
+    .comentText{
+        margin-top: 0px;
+        max-width: 340px;
+        word-break: break-all;
+    }
+    
+}

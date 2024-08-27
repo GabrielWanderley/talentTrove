@@ -1,0 +1,150 @@
+.updateDoc{
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.workers{
+    margin: 0 auto;
+    max-width: 900px ;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, 0.4fr);
+    gap: 0px;
+    margin-top: 30px;
+
+}
+
+.workers h3{
+   background-color: #F2BD49;
+   padding: 10px;
+   margin-left: 10px;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: box-shadow 0.2s ease, transform 0.2s ease; 
+
+}
+
+.photo{
+    width: 315px;
+    height: 315px;
+}
+
+.FormJob{
+    width: 100%;
+    background-color: #E89096;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.479);
+}
+
+.FormJobContent{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.FormJobContent textarea{
+    max-width: 500px;
+    min-width: 500px;
+    min-height: 250px;
+    max-height: 250px;
+    margin: 10px;
+}
+
+.FormJobContent h1{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+
+}
+
+.inputMakeJob {
+      margin-left: 0px;    
+}
+
+.inputJob{
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+}
+
+.button1{
+    margin-top: 10px;
+    background-color: #F2BD49;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow:
+    4px 4px rgba(0, 0, 0, 0.801);
+    cursor: pointer;
+    transition: box-shadow 0.2s ease, transform 0.2s ease; 
+  
+  }
+
+  .button1:active{
+  
+    box-shadow: 0 2px rgba(0, 0, 0, 0.801);
+    transform: translateY(4px);
+  }
+
+  .DeleteIcon{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    color: white;
+  }
+
+  .video{
+    width: 550px;
+    height: 300px;
+}
+
+
+@media (max-width: 768px) {
+    .updateDoc{
+        max-width: 350px;
+    }
+    .workers{
+        max-width: 350px;
+        text-align: center;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 0.1fr);
+        gap: 0px;
+    }
+
+    .workers h3{
+        background-color: #F2BD49;
+        padding: 10px;
+        margin-left: 5px;
+        cursor: pointer;
+     }
+
+     .FormJob{
+        width: 85%;
+    }
+    .FormJobContent{
+        max-width: 345px;        
+    }
+
+    .FormJobContent textarea{
+        max-width: 280px;
+        min-width: 280px;
+    }
+
+    .inputMakeJob {
+        margin-left:0px;    
+  }
+
+  .photo{
+    width: 283px;
+    height: 315px;
+}
+.video{
+    width: 295px;
+    height: 250px;
+}
+}

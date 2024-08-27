@@ -1,0 +1,139 @@
+
+.MakeJob{
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    margin-top: 100px;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.FormJob{
+    width: 100%;
+    background-color: #E89096;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.479);
+}
+
+.FormJobContent{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.FormJobContent textarea{
+    max-width: 500px;
+    min-width: 500px;
+    min-height: 250px;
+    max-height: 250px;
+    margin: 10px;
+}
+
+.FormJobContent h1{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+
+}
+
+.inputJob{
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+}
+
+.button1{
+    margin-top: 10px;
+    background-color: #F2BD49;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow:
+    4px 4px rgba(0, 0, 0, 0.801);
+    cursor: pointer;
+    transition: box-shadow 0.2s ease, transform 0.2s ease; 
+  
+  }
+
+  .button1:active{
+  
+    box-shadow: 0 2px rgba(0, 0, 0, 0.801);
+    transform: translateY(4px);
+  }
+
+  .workContent{
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+    word-break: break-all;
+}
+
+  .work{
+    margin-top: 100px;
+    text-align: center;
+    background-color: #95CBC8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.479);
+
+}
+
+.work p{
+    text-align: left;
+}
+
+.work h1{
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.image1{
+    width: 600px;
+    height: 300px;
+    background: fill;
+}
+
+.image2{
+    width: 100%;
+    height: 100%;
+
+}
+
+.video{
+    width: 600px;
+    height: 300px;
+}
+
+
+@media (max-width:768px) {
+
+    .MakeJob{
+        max-width: 350px;
+    }
+
+    .FormJob{
+        width: 85%;
+    }
+    .FormJobContent{
+        max-width: 345px;        
+    }
+
+    .FormJobContent textarea{
+        max-width: 280px;
+        min-width: 280px;
+    }
+
+    .inputMakeJob {
+        margin-left: 0px;    
+  }
+  .image1{
+    width: 315px;
+    height: 300px;
+}
+
+.video{
+    width: 315px;
+    height: 300px;
+}
+}
