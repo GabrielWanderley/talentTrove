@@ -38,8 +38,6 @@ Inserindo os dados do seu projeto Firebase no arquivo firebase.js:
 
 #⚡Iniciar projeto 
 
-Para iniciar o projeto, utilize o comando:
-
 ```bash
 npm run dev
 # ou
